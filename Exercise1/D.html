@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beautiful Image Gallery(72)</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dfe9f3, #ffffff);
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .gallery-container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .description {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .photo {
+            text-align: center;
+        }
+
+        .photo a {
+            text-decoration: none;
+        }
+
+        .photo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+            transition: 0.3s;
+        }
+
+        .photo img:hover {
+            transform: scale(1.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+            border-color: #3498db;
+        }
+
+        .photo p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .info {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #f1f7ff;
+            border-radius: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery-container">
+
+        <h1>🌄 My Image Gallery</h1>
+
+        <p class="description">
+            Click on any thumbnail to view the full-size image
+        </p>
+
+        <div class="gallery">
+
+            <!-- Image 1 -->
+            <div class="photo">
+                <a href="https://en.wikipedia.org/wiki/Pineapple" target="_blank">
+                    <img src="pine.png" alt="Nature">
+                </a>
+                <p>Pineapple</p>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="photo">
+                <a href="https://en.wikipedia.org/wiki/Mango" target="_blank">
+                    <img src="mango.png" alt="Mountain">
+                </a>
+                <p>Mango</p>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="photo">
+                <a href="https://en.wikipedia.org/wiki/Banana" target="_blank">
+                    <img src="banana.png" alt="Beach">
+                </a>
+                <p>Banana</p>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="photo">
+                <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" target="_blank">
+                    <img src="orange.png" alt="Forest">
+                </a>
+                <p>Orange</p>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="photo">
+                <a href="https://en.wikipedia.org/wiki/Strawberry" target="_blank">
+                    <img src="straw.png" alt="Sunset">
+                </a>
+                <p>Strawberry</p>
+            </div>
+
+            
+
+        </div>
+
+        <div class="info">
+            🖱️ Click an image to open the full-size photo
+        </div>
+
+    </div>
+
+</body>
+</html>
