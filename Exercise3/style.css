@@ -1,0 +1,97 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 20px;
+}
+
+.external {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid navy;
+}
+
+
+/* Navigation */
+nav {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Header */
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Article */
+article {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Aside */
+aside {
+    background-color: lightyellow;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Figure */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    color: gray;
+    font-style: italic;
+}
+
+/* Courses */
+.courses {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Span */
+span {
+    color: red;
+    font-weight: bold;
+}
+
+/* External CSS example */
+.external {
+    background-color: lightgreen;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid green;
+}
+
+/* Footer */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

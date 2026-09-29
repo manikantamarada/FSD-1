@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Programs</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        .audio-video {
+            text-align: center;
+            padding: 20px;
+        }
+
+        audio, video {
+            margin: 10px;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= A. SEMANTIC TAGS ================= -->
+
+    <header>
+        <h1 style="color: red; text-align: center;">
+            My College Website
+        </h1>
+
+        <p>Welcome to our college website</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>About Our College</h2>
+
+            <article>
+                <h3>College Information</h3>
+
+                <p>
+                    Our college provides quality education and
+                    helps students develop technical skills.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Important Notice</h3>
+            <p>Admissions are open for the new academic year.</p>
+        </aside>
+
+        <figure>
+            <img src="clg.png" alt="College Image" width="300">
+            <figcaption>Our College</figcaption>
+        </figure>
+
+        <div class="courses">
+            <h3>Courses Offered</h3>
+
+            <p>
+                We offer <span>B.Tech</span> courses
+                in different branches.
+            </p>
+        </div>
+
+
+        <!-- ================= B. AUDIO AND VIDEO ================= -->
+
+        <div class="audio-video">
+
+            <h2>Audio and Video</h2>
+
+            <h3>Audio</h3>
+
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video</h3>
+
+            <video width="500" height="300" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+        </div>
+
+
+        <!-- ================= C. CSS STYLES ================= -->
+
+        <section>
+            <h2>Types of CSS</h2>
+
+            <!-- Inline CSS -->
+            <p style="color: purple; font-size: 20px;">
+                This paragraph uses Inline CSS.
+            </p>
+
+            <!-- Internal CSS -->
+            <p>
+                This paragraph uses Internal CSS.
+            </p>
+
+            <!-- External CSS -->
+            <div class="external">
+                This text uses External CSS.
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>&copy; 2026 My College Website</p>
+        <p>Contact: college@example.com</p>
+    </footer>
+
+</body>
+</html>
+```
