@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programs</title>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function internalJS() {
+            document.getElementById("internal").innerHTML =
+                "This message is from Internal JavaScript.";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>JavaScript Examples</h1>
+
+    <!-- =================================
+         a. INTERNAL JAVASCRIPT
+         ================================= -->
+
+    <h2>Internal JavaScript</h2>
+
+    <button onclick="internalJS()">
+        Click Me
+    </button>
+
+    <p id="internal"></p>
+
+
+    <!-- =================================
+         a. EXTERNAL JAVASCRIPT
+         ================================= -->
+
+    <h2>External JavaScript</h2>
+
+    <button onclick="externalJS()">
+        Click Me
+    </button>
+
+    <p id="external"></p>
+
+
+    <!-- =================================
+         b. DIFFERENT WAYS OF DISPLAYING OUTPUT
+         ================================= -->
+
+    <h2>Displaying Output</h2>
+
+    <button onclick="displayOutput()">
+        Display Output
+    </button>
+
+    <p id="output"></p>
+
+
+    <!-- =================================
+         c. DIFFERENT WAYS OF TAKING INPUT
+         ================================= -->
+
+    <h2>Taking Input</h2>
+
+    <button onclick="takeInput()">
+        Take Input
+    </button>
+
+    <p id="inputResult"></p>
+
+
+    <!-- =================================
+         d. VOTER PROGRAM
+         ================================= -->
+
+    <h2>Voter Eligibility</h2>
+
+    <button onclick="voterDetails()">
+        Enter Voter Details
+    </button>
+
+    <div id="voterTable"></div>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
+
+### `script.js`
+
+```javascript
+// =================================
+// a. EXTERNAL JAVASCRIPT
+// =================================
+
+function externalJS() {
+
+    document.getElementById("external").innerHTML =
+        "This message is from External JavaScript.";
+}
+
+
+// =================================
+// b. DIFFERENT WAYS OF DISPLAYING OUTPUT
+// =================================
+
+function displayOutput() {
+
+    // 1. innerHTML
+    document.getElementById("output").innerHTML =
+        "Output using innerHTML";
+
+    // 2. alert()
+    alert("Output using alert()");
+
+    // 3. console.log()
+    console.log("Output using console.log()");
+}
+
+
+// =================================
+// c. DIFFERENT WAYS OF TAKING INPUT
+// =================================
+
+function takeInput() {
+
+    // 1. prompt()
+    let name = prompt("Enter your name:");
+
+    // 2. HTML input
+    let age = 20;
+
+    // 3. Input using prompt and type conversion
+    let number = prompt("Enter a number:");
+
+    number = Number(number);
+
+    document.getElementById("inputResult").innerHTML =
+        "Name: " + name + "<br>" +
+        "Age: " + age + "<br>" +
+        "Number: " + number;
+}
+
+
+// =================================
+// d. VOTER PROGRAM
+// =================================
+
+function voterDetails() {
+
+    // Taking input using prompt
+    let name = prompt("Enter your name:");
+
+    let age = prompt("Enter your age:");
+
+    // Type conversion
+    age = Number(age);
+
+    // Checking voting eligibility
+    let result;
+
+    if (age >= 18) {
+        result = "Eligible to Vote";
+    } else {
+        result = "Not Eligible to Vote";
+    }
+
+    // Displaying result in table
+    document.getElementById("voterTable").innerHTML =
+        "<table border='1' cellpadding='10'>" +
+        "<tr>" +
+        "<th>Name</th>" +
+        "<th>Age</th>" +
+        "<th>Voting Status</th>" +
+        "</tr>" +
+
+        "<tr>" +
+        "<td>" + name + "</td>" +
+        "<td>" + age + "</td>" +
+        "<td>" + result + "</td>" +
+        "</tr>" +
+
+        "</table>";
+}

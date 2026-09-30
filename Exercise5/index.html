@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Color, Background, Font, Text and Box Model</title>
+
+    <style>
+
+        /* a. DIFFERENT WAYS TO REFERENCE COLORS*/
+
+        .color-name {
+            color: red;
+        }
+
+        .hex-color {
+            color: #0000FF;
+        }
+
+        .rgb-color {
+            color: rgb(0, 128, 0);
+        }
+
+        .rgba-color {
+            color: rgba(255, 0, 0, 0.6);
+        }
+
+        .hsl-color {
+            color: hsl(280, 100%, 50%);
+        }
+
+
+        /*b. BACKGROUND IMAGE*/
+
+        body {
+            margin: 0;
+            min-height: 1500px;
+
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: 300px;
+        }
+
+
+        /* c. FONT AND TEXT PROPERTIES*/
+
+        .font-text {
+            background-color: white;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .font-size {
+            font-size: 25px;
+        }
+
+        .font-weight {
+            font-weight: bold;
+        }
+
+        .font-style {
+            font-style: italic;
+        }
+
+        .text-decoration {
+            text-decoration: underline;
+        }
+
+        .text-transformation {
+            text-transform: uppercase;
+        }
+
+        .text-alignment {
+            text-align: center;
+        }
+
+
+        /* d. CSS BOX MODEL*/
+
+        .box {
+            width: 300px;
+
+            /* Content */
+            background-color: lightblue;
+
+            /* Padding */
+            padding: 30px;
+
+            /* Border */
+            border: 5px solid blue;
+
+            /* Margin */
+            margin: 50px auto;
+
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================
+         a. COLOR REFERENCES
+         ===================================== -->
+
+    <h1 class="color-name">Color Name: Red</h1>
+
+    <h1 class="hex-color">HEX Color: Blue</h1>
+
+    <h1 class="rgb-color">RGB Color: Green</h1>
+
+    <h1 class="rgba-color">RGBA Color: Red with Transparency</h1>
+
+    <h1 class="hsl-color">HSL Color: Purple</h1>
+
+
+    <!-- =====================================
+         b. BACKGROUND IMAGE
+         ===================================== -->
+
+    <h2 class="text-alignment">
+        Background Image Example
+    </h2>
+
+    <p class="text-alignment">
+        Scroll the page. The background image remains fixed.
+    </p>
+
+
+    <!-- =====================================
+         c. FONT AND TEXT
+         ===================================== -->
+
+    <div class="font-text">
+
+        <h2>CSS Font and Text Properties</h2>
+
+        <p class="font-size">
+            This text demonstrates font-size.
+        </p>
+
+        <p class="font-weight">
+            This text demonstrates font-weight.
+        </p>
+
+        <p class="font-style">
+            This text demonstrates font-style.
+        </p>
+
+        <p class="text-decoration">
+            This text demonstrates text-decoration.
+        </p>
+
+        <p class="text-transformation">
+            this text demonstrates text transformation.
+        </p>
+
+        <p class="text-alignment">
+            This text demonstrates text-alignment.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================
+         d. CSS BOX MODEL
+         ===================================== -->
+
+    <h2 class="text-alignment">
+        CSS Box Model
+    </h2>
+
+    <div class="box">
+        <h3>Content</h3>
+        <p>
+            This is the content area of the CSS Box Model.
+        </p>
+    </div>
+
+</body>
+</html>

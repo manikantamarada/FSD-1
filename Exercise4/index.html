@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+
+        /* i. SIMPLE SELECTORS*/
+
+        /* 1. Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* 2. ID Selector */
+        #heading {
+            color: red;
+        }
+
+        /* 3. Class Selector */
+        .para {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* 4. Group Selector */
+        h2, h3 {
+            text-align: center;
+        }
+
+        /* 5. Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+
+        /* ii. COMBINATOR SELECTORS*/
+
+        /* 1. Descendant Selector */
+        .box p {
+            color: purple;
+        }
+
+        /* 2. Child Selector */
+        .parent > p {
+            background-color: lightblue;
+        }
+
+        /* 3. Adjacent Sibling Selector */
+        h4 + p {
+            color: orange;
+        }
+
+        /* 4. General Sibling Selector */
+        h5 ~ p {
+            background-color: lightyellow;
+        }
+
+
+        /*iii. PSEUDO-CLASS SELECTOR*/
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+        li:first-child {
+            color: blue;
+        }
+
+
+        /*iv. PSEUDO-ELEMENT SELECTOR*/
+
+        .text::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        .text::first-line {
+            font-weight: bold;
+        }
+
+        .text::before {
+            content: "★ ";
+            color: orange;
+        }
+
+        .text::after {
+            content: " ✔";
+            color: green;
+        }
+
+
+        /*v. ATTRIBUTE SELECTOR*/
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        input[type="email"] {
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selector Forms</h1>
+
+    <!-- SIMPLE SELECTORS -->
+
+    <h2 id="heading">Simple Selectors</h2>
+
+    <p class="para">
+        This paragraph uses a Class Selector.
+    </p>
+
+    <h3>Group Selector Example</h3>
+
+
+    <!-- COMBINATOR SELECTORS -->
+
+    <h2>Combinator Selectors</h2>
+
+    <!-- Descendant Selector -->
+    <div class="box">
+        <p>Descendant Selector</p>
+
+        <div>
+            <p>Nested paragraph</p>
+        </div>
+    </div>
+
+    <!-- Child Selector -->
+    <div class="parent">
+        <p>Direct child paragraph</p>
+
+        <div>
+            <p>Nested paragraph</p>
+        </div>
+    </div>
+
+    <!-- Adjacent Sibling -->
+    <h4>Adjacent Sibling</h4>
+    <p>This paragraph is immediately after h4.</p>
+
+    <!-- General Sibling -->
+    <h5>General Sibling</h5>
+    <p>First paragraph after h5.</p>
+    <p>Second paragraph after h5.</p>
+
+
+    <!-- PSEUDO-CLASS -->
+
+    <h2>Pseudo-Class Selector</h2>
+
+    <a href="#">Move mouse over this link</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Click here">
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+
+    <!-- PSEUDO-ELEMENT -->
+
+    <h2>Pseudo-Element Selector</h2>
+
+    <p class="text">
+        This is an example of pseudo-element selector.
+        It modifies a specific part of the element.
+    </p>
+
+
+    <!-- ATTRIBUTE SELECTOR -->
+
+    <h2>Attribute Selector</h2>
+
+    <input type="text" placeholder="Enter Name">
+
+    <br><br>
+
+    <input type="email" placeholder="Enter Email">
+
+</body>
+</html>
